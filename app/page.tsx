@@ -110,7 +110,7 @@ export default function Home() {
             <div className="grid gap-4 md:grid-cols-3">
               {projects.map((project, index) => (
                 <article
-                  key={project.title}
+                  key={project.id}
                   className={`border-t border-[var(--line)] p-5 ${index === 1 ? "bg-black text-white" : "bg-[var(--paper)]"
                     }`}
                 >

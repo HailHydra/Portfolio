@@ -25,7 +25,7 @@ export default function ProjectsPage() {
             </p>
             <div className="mt-8 grid gap-4 md:grid-cols-2">
               {projects.slice(0, 3).map((project) => (
-                <article key={project.title} className="paper-panel p-5">
+                <article key={project.id} className="paper-panel p-5">
                   <p className="text-xs uppercase tracking-[0.22em] text-[var(--muted)]">{project.stack.join(" / ")}</p>
                   <h2 className="mt-5 text-2xl font-semibold uppercase leading-none">{project.title}</h2>
                   <p className="mt-4 text-sm leading-7 text-[var(--muted)]">{project.summary}</p>
@@ -37,7 +37,7 @@ export default function ProjectsPage() {
 
           <div className="space-y-4">
             {projects.slice(3).map((project) => (
-              <article key={`${project.title}-${project.outcome}`} className="border-t border-black bg-black p-6 text-white sm:p-8">
+              <article key={project.id} className="border-t border-black bg-black p-6 text-white sm:p-8">
                 <p className="text-xs uppercase tracking-[0.22em] text-white/60">
                   {project.placeholder ? "Reserved" : "Featured"}
                 </p>

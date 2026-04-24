@@ -31,6 +31,7 @@ export type ServiceItem = {
 };
 
 export type ProjectItem = {
+  id: string;
   title: string;
   summary: string;
   stack: string[];
@@ -117,6 +118,7 @@ export const capabilities: ServiceItem[] = [
 
 export const projects: ProjectItem[] = [
   {
+    id: "sekhmet",
     title: "Sekhmet",
     summary:
       "A long-term cross-context LLM storage system using a hybrid vector and graph database approach for memory, retrieval, and structured context handling.",
@@ -125,6 +127,7 @@ export const projects: ProjectItem[] = [
     icon: BrainCircuit,
   },
   {
+    id: "dysarthria-detection-wav2vec2",
     title: "Dysarthria Detection Using Wav2Vec2",
     summary:
       "A speech classification project using Wav2Vec2 with PEFT techniques such as LoRA and stratified k-fold validation for dysarthria detection.",
@@ -133,6 +136,7 @@ export const projects: ProjectItem[] = [
     icon: BarChart3,
   },
   {
+    id: "virtual-art-gallery-and-museums",
     title: "Virtual Art Gallery and Museums",
     summary:
       "A web-based interactive gallery experience built with Next.js, TypeScript, and Three.js to present museum collections in an immersive format.",
@@ -141,6 +145,7 @@ export const projects: ProjectItem[] = [
     icon: ArrowUpRight,
   },
   {
+    id: "reserved-git-project-1",
     title: "Reserved For Git Project",
     summary:
       "Empty project slot kept intentionally so you can add another shipped repository later without changing the layout.",
@@ -150,6 +155,7 @@ export const projects: ProjectItem[] = [
     placeholder: true,
   },
   {
+    id: "reserved-git-project-2",
     title: "Reserved For Git Project",
     summary:
       "Second empty slot reserved for another project import, keeping the portfolio structure ready for expansion.",
